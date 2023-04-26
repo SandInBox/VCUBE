@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=1250, initial-scale=1.0">
+   <title>Каталог</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/nouislider.min.css">
+</head>
+
+<body>
+
+   <!-- Хэдер - начало -->
+
+   <header class="header">
+      <div class="container">
+
+      </div>
+   </header>
+
+   <!-- Хэдер - конец -->
+
+
+
+   <!-- Классы - начало -->
+
+   <section class="classes">
+      <div class="container">
+         <div class="classes__flex">
+
+            <!-- Класс эконом - начало -->
+
+            <button class="classes__flex-item">
+               <img class="classes__flex-item--img" src="images/filter__up.png" alt="#">
+               <p class="classes__flex-item--text">
+                  Эконом
+               </p>
+            </button>
+
+            <!-- Класс эконом - конец -->
+
+
+            <!-- Класс стандарт - начало -->
+
+            <button class="classes__flex-item">
+               <img class="classes__flex-item--img" src="images/filter__up.png" alt="#">
+               <p class="classes__flex-item--text">
+                  Стандарт
+               </p>
+            </button>
+
+            <!-- Класс стандарт - конец -->
+
+
+            <!-- Класс бизнес - начало -->
+
+            <button class="classes__flex-item">
+               <img class="classes__flex-item--img" src="images/filter__up.png" alt="#">
+               <p class="classes__flex-item--text">
+                  Бизнес
+               </p>
+            </button>
+
+            <!-- Класс бизнес - конец -->
+
+
+            <!-- Класс минивэны - начало -->
+
+            <button class="classes__flex-item">
+               <img class="classes__flex-item--img" src="images/filter__up.png" alt="#">
+               <p class="classes__flex-item--text">
+                  Минивэны
+               </p>
+            </button>
+
+            <!-- Класс минивэны - конец -->
+
+
+            <!-- Класс кроссоверы - начало -->
+
+            <button class="classes__flex-item">
+               <img class="classes__flex-item--img" src="images/filter__up.png" alt="#">
+               <p class="classes__flex-item--text">
+                  Кроссоверы
+               </p>
+            </button>
+
+            <!-- Класс кроссоверы - конец -->
+
+
+            <!-- Класс премиум - начало -->
+
+            <button class="classes__flex-item">
+               <img class="classes__flex-item--img" src="images/filter__up.png" alt="#">
+               <p class="classes__flex-item--text">
+                  Премиум
+               </p>
+            </button>
+
+            <!-- Класс премиум - конец -->
+
+         </div>
+         <div class="classes__upper">
+            <h1 class="classes__upper-title">
+               <a href="#" class="classes__upper-title--link">Главная</a> / Каталог
+            </h1>
+            <div class="classes__upper-sort">
+               <div class="tooltip tooltip0">
+                  <p class="classes__upper-sort--text">
+                     Сортировка
+                  </p>
+                  <img src="images/svg/sort.svg" alt="#" class="classes__upper-sort--ico">
+                  <div class="tooltiptext0">
+                     <button class="classes__upper-sort--btn classes__upper-sort--btn1" id="maxMin">
+                        Сначала дорогие
+                     </button>
+                     <button class="classes__upper-sort--btn classes__upper-sort--btn2" id="minMax">
+                        Сначала дешёвые
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+
+   <!-- Классы - конец -->
+
+
+
+   <!-- Каталог - начало -->
+
+   <section class="catalog">
+      <div class="container">
+         <div class="catalog__flex">
+
+            <!-- Фильтры - начало -->
+
+            <div class="catalog__flex-filter">
+
+               <!-- Фильтр руль - начало -->
+
+               <div class="catalog__flex-filter--wheel">
+                  <p class="catalog__flex-filter--wheel-title">
+                     Руль
+                  </p>
+                  <button class="catalog__flex-filter--wheel-btn" id="leftwheel">Левый</button>
+                  <button class="catalog__flex-filter--wheel-btn" id="rightwheel">Правый</button>
+               </div>
+
+               <!-- Фильтр руль - конец -->
+
+
+               <!-- Фильтр привод - начало -->
+
+               <div class="catalog__flex-filter--unit">
+                  <p class="catalog__flex-filter--unit-title">
+                     Привод
+                  </p>
+                  <button class="catalog__flex-filter--unit-btn" id="beforeunit">Передний</button>
+                  <button class="catalog__flex-filter--unit-btn" id="fourunit">Полный 4WD</button>
+               </div>
+
+               <!-- Фильтр привод - конец -->
+
+
+               <!-- Фильтр марка - начало -->
+
+               <div class="catalog__flex-filter--mark">
+                  <p class="catalog__flex-filter--mark-title">
+                     Марка
+                  </p>
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox" id="toyotaCheck"
+                     name="" value="yes">
+                  <label for="toyotaCheck" class="catalog__flex-filter--mark-label">Toyota</label>
+
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox" id="nissanCheck"
+                     name="" value="yes">
+                  <label for="nissanCheck" class="catalog__flex-filter--mark-label" id="nissanLabel">Nissan</label>
+
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox" id="hyundaiCheck"
+                     name="" value="yes">
+                  <label for="hyundaiCheck" class="catalog__flex-filter--mark-label">Hyundai</label>
+
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox"
+                     id="mitsubishiCheck" name="" value="yes">
+                  <label for="mitsubishiCheck" class="catalog__flex-filter--mark-label">Mitsubishi</label>
+
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox" id="mazdaCheck"
+                     name="" value="yes">
+                  <label for="mazdaCheck" class="catalog__flex-filter--mark-label">Mazda</label>
+
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox" id="lexusCheck"
+                     name="" value="yes">
+                  <label for="lexusCheck" class="catalog__flex-filter--mark-label">Lexus</label>
+
+                  <input type="checkbox" class="catalog__flex-filter--mark-checkbox custom-checkbox" id="cheryCheck"
+                     name="" value="yes">
+                  <label for="cheryCheck" class="catalog__flex-filter--mark-label">Chery</label>
+               </div>
+
+               <!-- Фильтр марка - конец -->
+
+
+               <!-- Фильтр цена - начало -->
+
+               <div class="catalog__flex-filter--price">
+                  <p class="catalog__flex-filter--price-title">
+                     Ценовой диапазон
+                  </p>
+                  <div class="catalog__flex-filter--price-range" id="slider1"></div>
+                  <div class="catalog__flex-filter--price-label">
+                     <span
+                        class="catalog__flex-filter--price-label-text catalog__flex-filter--price-label-text-1">от</span>
+                     <span
+                        class="catalog__flex-filter--price-label-text catalog__flex-filter--price-label-text-2">₽</span>
+                     <input type="nomber" class="catalog__flex-filter--price-label-input input1" id="inputPriceOne"
+                        readonly>
+                     <svg class="catalog__flex-filter--price-label-svg" width="12" height="1" viewBox="0 0 12 1"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="1" fill="#252525" />
+                     </svg>
+                     <span
+                        class="catalog__flex-filter--price-label-text catalog__flex-filter--price-label-text-3">до</span>
+                     <span
+                        class="catalog__flex-filter--price-label-text catalog__flex-filter--price-label-text-4">₽</span>
+                     <input type="nomber" class="catalog__flex-filter--price-label-input input2" id="inputPriceTwo"
+                        readonly>
+                  </div>
+               </div>
+
+               <!-- Фильтр цена - конец -->
+
+
+               <!-- Фильтр год - начало -->
+
+               <div class="catalog__flex-filter--year">
+                  <p class="catalog__flex-filter--year-title">
+                     Год выпуска
+                  </p>
+                  <div class="catalog__flex-filter--year-range" id="slider2"></div>
+                  <div class="catalog__flex-filter--year-label">
+                     <span
+                        class="catalog__flex-filter--year-label-text catalog__flex-filter--year-label-text-1">от</span>
+                     <input type="text" class="catalog__flex-filter--year-label-input" id="inputPriceThree" readonly>
+                     <svg class="catalog__flex-filter--year-label-svg" width="12" height="1" viewBox="0 0 12 1"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="1" fill="#252525" />
+                     </svg>
+                     <span
+                        class="catalog__flex-filter--year-label-text catalog__flex-filter--year-label-text-2">до</span>
+                     <input type="text" class="catalog__flex-filter--year-label-input" id="inputPriceFour" readonly>
+                  </div>
+               </div>
+
+               <!-- Фильтр год - конец -->
+
+
+               <!-- Фильтр очистка - начало -->
+
+               <div class="catalog__flex-filter--clear">
+                  <button class="catalog__flex-filter--clear-btn" id="clearFilter">
+                     Очистить фильтр
+                  </button>
+               </div>
+
+               <!-- Фильтр очистка - конец -->
+
+            </div>
+
+            <!-- Фильтры - конец -->
+
+            <!-- Карточки - начало -->
+
+            <div class="catalog__flex-car">
+               <div class="catalog__flex-car--grid">
+
+                  <!-- Машина номер 1 - начало -->
+
+                  <div class="catalog__flex-car--grid-item fourunit toyota right" data-price="1200" data-year="2015"
+                     data-mark="Toyota" data-wheel="right" data-unit="4WD" data-class="econom" id="car1">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/1_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico"
+                           id="carImg1">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name car1__name-export" id="carTitle1">
+                        Toyota Passo
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price" id="carPrice1">
+                        1.200 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn open-popup1" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 1 - конец -->
+
+
+                  <!-- Машина номер 2 - начало -->
+
+                  <div class="catalog__flex-car--grid-item fourunit toyota right" data-price="1200" data-year="2015"
+                     data-mark="Toyota" data-wheel="right" data-unit="4WD" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/2_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name" id="carTitle2">
+                        Toyota Passo
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.200 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn open-popup2" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 2 - конец -->
+
+
+                  <!-- Машина номер 3 - начало -->
+
+                  <div class="catalog__flex-car--grid-item beforeunit toyota right" data-price="1300" data-year="2017"
+                     data-mark="Toyota" data-wheel="right" data-unit="before" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/3_card-ico.png" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Passo
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.300 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 3 - конец -->
+
+
+                  <!-- Машина номер 4 - начало -->
+
+                  <div class="catalog__flex-car--grid-item beforeunit toyota right" data-price="1200" data-year="2014"
+                     data-mark="Toyota" data-wheel="right" data-unit="before" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/4_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Vitz
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.200 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 4 - конец -->
+
+
+                  <!-- Машина номер 5 - начало -->
+
+                  <div class="catalog__flex-car--grid-item fourunit toyota right" data-price="1200" data-year="2013"
+                     data-mark="Toyota" data-wheel="right" data-unit="4WD" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/5_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Vitz
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.200 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 5 - конец -->
+
+
+                  <!-- Машина номер 6 - начало -->
+
+                  <div class="catalog__flex-car--grid-item beforeunit toyota right" data-price="1200" data-year="2013"
+                     data-mark="Toyota" data-wheel="right" data-unit="before" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/6_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Vitz
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.200 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 6 - конец -->
+
+
+                  <!-- Машина номер 7 - начало -->
+
+                  <div class="catalog__flex-car--grid-item beforeunit toyota right" data-price="1200" data-year="2014"
+                     data-mark="Toyota" data-wheel="right" data-unit="before" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/7_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Vitz
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.200 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 7 - конец -->
+
+
+                  <!-- Машина номер 8 - начало -->
+
+                  <div class="catalog__flex-car--grid-item beforeunit toyota right" data-price="1300" data-year="2014"
+                     data-mark="Toyota" data-wheel="right" data-unit="before" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/8_card-ico.png" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Vitz
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.300 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 8 - конец -->
+
+
+                  <!-- Машина номер 9 - начало -->
+
+                  <div class="catalog__flex-car--grid-item  beforeunit toyota right" data-price="1300" data-year="2015"
+                     data-mark="Toyota" data-wheel="right" data-unit="before" data-class="econom">
+                     <div class="catalog__flex-car--grid-item-div">
+                        <img src="images/catalog/9_card-ico.jpg" alt="#" class="catalog__flex-car--grid-item-div--ico">
+                     </div>
+                     <p class="catalog__flex-car--grid-item-name">
+                        Toyota Vitz
+                     </p>
+                     <p class="catalog__flex-car--grid-item-price">
+                        1.300 ₽
+                     </p>
+                     <button class="catalog__flex-car--grid-item-btn" id="open">
+                        Подробнее
+                     </button>
+                  </div>
+
+                  <!-- Машина номер 9 - конец -->
+               </div>
+            </div>
+
+            <!-- Карточки - конец -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Каталог - конец -->
+
+   <!-- Попап - начало -->
+
+   <div class="popup__bg">
+      <div class="popup">
+
+         <!-- Кнопка закрытия - начало -->
+
+         <img src="images/svg/close.svg" class="close-popup">
+
+         <!-- Кнопка закрытия - конец -->
+
+
+         <!-- Заголовок - начало -->
+
+         <p class="popup__flex-info--up-title car__name-import" id="carTitlePop">
+            Toyota Camry 2021
+         </p>
+
+         <!-- Заголовок - конец -->
+
+         <div class="popup__flex">
+            <div class="popup__container">
+
+               <!-- Слайдер - начало -->
+
+               <div class="itcss slider popup__flex-slider">
+                  <div class="itcss__wrapper slider__wrapper">
+                     <div class="itcss__items slider__items">
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                        <div class="itcss__item slider__item">
+                           <img src="images/popup/popup1/title__photo1.jpg">
+                        </div>
+                     </div>
+                  </div>
+                  <a class="slider__control itcss__btn itcss__btn-prev" href="#" role="button" data-slide="prev"></a>
+                  <a class="slider__control itcss__btn itcss__btn-next" href="#" role="button" data-slide="next"></a>
+               </div>
+               <div class="slider__thumbnails">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="0">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="1">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="2">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="3">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="4">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="5">
+                  <img class="slider__thumbnails-item" src="images/popup/popup1/title__photo1.jpg" data-slide-to="6">
+               </div>
+            </div>
+
+            <!-- Слайдер - конец -->
+
+
+            <!-- Характеристики - начало -->
+
+            <div class="popup__flex-info">
+               <div class="popup__flex-info--up">
+                  <p class="popup__flex-info--up-subtitle">
+                     Характеристики
+                  </p>
+                  <div class="popup__flex-info--up-flex-big">
+                     <div class="popup__flex-info--up-flex-one">
+                        <p class="popup__flex-info--up-flex-one-text">
+                           Цвет
+                        </p>
+                        <p class="popup__flex-info--up-flex-one-text">
+                           Мест
+                        </p>
+                        <p class="popup__flex-info--up-flex-one-text">
+                           Руль
+                        </p>
+                        <p class="popup__flex-info--up-flex-one-text">
+                           Привод
+                        </p>
+                        <p class="popup__flex-info--up-flex-one-text">
+                           Коробка
+                        </p>
+                     </div>
+                     <div class="popup__flex-info--up-flex-two">
+                        <p class="popup__flex-info--up-flex-two-char" id="carColorPop">
+                           Серый
+                        <p class="popup__flex-info--up-flex-two-char" id="carSizePop">
+
+                        </p>
+                        <p class="popup__flex-info--up-flex-two-char" id="carWheelPop">
+
+                        </p>
+                        <p class="popup__flex-info--up-flex-two-char" id="carUnitPop">
+
+                        </p>
+                        <p class="popup__flex-info--up-flex-two-char" id="carBoxPop">
+
+                        </p>
+                     </div>
+                     <div class="popup__flex-info--up-flex-three">
+                        <p class="popup__flex-info--up-flex-three-text">
+                           Объем двиг.
+                        </p>
+                        <p class="popup__flex-info--up-flex-three-text">
+                           Топл. бак
+                        </p>
+                        <p class="popup__flex-info--up-flex-three-text">
+                           Страховка
+                        </p>
+                        <div class="popup__flex-info--up-flex-three-bottomtext">
+                           <p class="popup__flex-info--up-flex-three-bottomtext-text ">
+                              Условия залога
+                           </p>
+                           <div class="tooltip">
+                              <img class="popup__flex-info--up-flex-three-bottomtext-question"
+                                 src="images/popup/info.svg">
+                              <div class="tooltiptext">
+                                 <p class="tooltiptext__title">
+                                    Залог
+                                 </p>
+                                 <div class="tooltiptext__flex">
+                                    <p class="tooltiptext__flex-text">
+                                       По городу
+                                    </p>
+                                    <p class="tooltiptext__flex-item" id="carInCityPop">
+
+                                    </p>
+                                 </div>
+                                 <div class="tooltiptext__flex2">
+                                    <p class="tooltiptext__flex2-text">
+                                       По межгороду
+                                    </p>
+                                    <p class="tooltiptext__flex2-item" id="carOutCityPop">
+
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="popup__flex-info--up-flex-four">
+                        <p class="popup__flex-info--up-flex-four-char" id="carEnginePop">
+                           2.5 л.
+                        <p class="popup__flex-info--up-flex-four-char" id="carOilPop">
+                           70 л.
+                        </p>
+                        <p class="popup__flex-info--up-flex-four-char" id="fear1">
+                           ОСАГО
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Характеристики - конец -->
+
+
+               <!-- Расчет стоимости - начало -->
+
+               <div class="popup__flex-info--rent">
+                  <p class="popup__flex-info--rent-title">
+                     Расчёт стоимости
+                  </p>
+                  <div class="popup__flex-info--rent-div">
+                     <p class="popup__flex-info--rent-div-text">
+                        Выберите количество суток
+                     </p>
+                     <div class="popup__flex-info--rent-div-range" id="slider3"></div>
+                     <div class="popup__flex-info--rent-div-flex">
+                        <input type="nomber" class="popup__flex-info--rent-div-flex-date" id="dateStart">
+                        <img src="images/svg/date.svg" alt="#" class="popup__flex-info--rent-div-flex-date-ico1">
+                        <input type="nomber" class="popup__flex-info--rent-div-flex-date" id="dateEnd">
+                        <img src="images/svg/date.svg" alt="#" class="popup__flex-info--rent-div-flex-date-ico2">
+                     </div>
+                     <div class="popup__flex-info--rent-div-flextext">
+                        <div class="popup__flex-info--rent-div-flextext-item1">
+                           <div class="cont">
+                              <p class="popup__flex-info--rent-div-flextext-item1-text">
+                                 Полная страховка
+                              </p>
+                              <div class="tooltip">
+                                 <img class="tooltip popup__flex-info--up-flex-three-bottomtext-question"
+                                    src="images/popup/info.svg">
+                                 <div class="tooltiptext1">
+                                    <p class="tooltiptext1__title">
+                                       Страховка
+                                    </p>
+                                    <p class="tooltiptext1__subtitle">
+                                       Здесь будет описание про страховку в две или три строки
+                                    </p>
+                                 </div>
+                              </div>
+                              <label class="switch">
+                                 <input type="checkbox" id="firstCheck">
+                                 <span class="pers round"></span>
+                              </label>
+                           </div>
+                           <div class="">
+                              <p class="popup__flex-info--rent-div-flextext-item1-text2">
+                                 Детское кресло
+                              </p>
+                              <label class="switch2">
+                                 <input type="checkbox" id="secondCheck">
+                                 <span class="pers2 round2"></span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="popup__flex-info--rent-div-flextext-item2">
+                           <div class="popup__flex-info--rent-div-flextext-item2-flex">
+                              <div class="popup__flex-info--rent-div-flextext-item2-flex-persent" id="persent1">
+                                 <p class="popup__flex-info--rent-div-flextext-item2-flex-persent-text"
+                                    id="persent1-text">
+                                    -25%
+                                 </p>
+                              </div>
+                              <p class="popup__flex-info--rent-div-flextext-item2-flex-pretitle" id="carPrePrice">
+                     
+                              </p>
+                              <p class="popup__flex-info--rent-div-flextext-item2-flex-title">
+                                 ####
+                              </p>
+                              <p class="popup__flex-info--rent-div-flextext-item2-flex-subtitle">
+                                 ₽/сутки
+                              </p>
+                           </div>
+                           <hr class="popup__flex-info--rent-div-flextext-item2-hr">
+                           <div class="popup__flex-info--rent-div-flextext-item2-flex2">
+                              <p class="popup__flex-info--rent-div-flextext-item2-flex2-subtitle">
+                                 итого
+                              </p>
+                              <p class="popup__flex-info--rent-div-flextext-item2-flex2-title">
+                                 ####
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="popup__flex-info--rent-div-item3 open-minipopup">
+                        Перейти к бронированию
+                     </button>
+                  </div>
+               </div>
+
+               <!-- Расчет стоимости - конец -->
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Попап - конец -->
+
+
+   <!-- Мини-попап - начало -->
+
+   <div class="minipopup__bg">
+      <div class="minipopup">
+         <img src="images/svg/close.svg" class="close-minipopup">
+         <p class="minipopup__title">
+            Оформление брони
+         </p>
+         <div class="minipopup__flex">
+            <img class="minipopup__flex-ico" src="images/filter__up.png">
+            <div class="minipopup__flex-info">
+               <p class="minipopup__flex-info--title">
+                  Toyota Camry 2021
+               </p>
+               <div class="minipopup__flex-info--items">
+                  <div class="minipopup__flex-info--items-item">
+                     <p class="minipopup__flex-info--items-item-text">
+                        Срок аренды
+                     </p>
+                     <p class="minipopup__flex-info--items-item-text">
+                        Даты аренды
+                     </p>
+                     <p class="minipopup__flex-info--items-item-text">
+                        Стоимость
+                     </p>
+                  </div>
+                  <div class="minipopup__flex-info--items-item">
+                     <p class="minipopup__flex-info--items-item-info" id="minipopDays">
+                        4 дня
+                     </p>
+                     <p class="minipopup__flex-info--items-item-info">
+                        14.04.23. - 20.04.23
+                     </p>
+                     <p class="minipopup__flex-info--items-item-info" id="minipopPrice">
+                        20.000 ₽
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr class="minipopup__hr">
+         <div class="minipopup__adress-flex">
+            <div class="minipopup__adress-flex--item">
+               <p class="minipopup__adress-flex--item-title">
+                  Способ доставки
+               </p>
+               <div class="minipopup__adress-flex--item-div">
+                  <input type="radio" class="minipopup__adress-flex--item-checkbox custom-radio" id="airCheck"
+                     name="delivery" value="airport">
+                  <label for="airCheck" class="minipopup__adress-flex--item-label">В аэропорт</label>
+                  <input type="radio" class="minipopup__adress-flex--item-checkbox custom-radio" id="adressCheck"
+                     name="delivery" value="adress">
+                  <label for="adressCheck" class="minipopup__adress-flex--item-label">По адресу</label>
+                  <input type="radio" class="minipopup__adress-flex--item-checkbox custom-radio" id="itakeCheck"
+                     name="delivery" value="itake">
+                  <label for="itakeCheck" class="minipopup__adress-flex--item-label">Заберу сам</label>
+               </div>
+            </div>
+         </div>
+
+         <p class="minipopup__itake">
+            Адрес офиса: <strong class="minipopup__itake-strong">г. Хабаровск, ул. Вяземская 11, офис 1</strong>
+         </p>
+
+         <p class="minipopup__adress">
+            Стомость доставки: <strong class="minipopup__adress-strong">1000 ₽</strong>
+         </p>
+
+         <p class="minipopup__airport">
+            Стомость доставки: <strong class="minipopup__adress-strong">2000 ₽</strong>
+         </p>
+
+         <hr class="minipopup__hr-two">
+         <div class="minipopup__form-flex">
+            <div class="minipopup__form-flex--item">
+               <p class="minipopup__form-flex--item-title">
+                  Введите имя
+               </p>
+               <input type="text" class="minipopup__form-flex--item-input" placeholder="Введите имя">
+            </div>
+            <div class="minipopup__form-flex--item">
+               <p class="minipopup__form-flex--item-title">
+                  Номер телефона
+               </p>
+               <input type="text" class="minipopup__form-flex--item-input" placeholder="+7 (999) 999-99-99">
+            </div>
+         </div>
+
+         <div class="minipopup__form-dop1">
+            <p class="minipopup__form-dop1--title">
+               Адрес доставки
+            </p>
+            <input type="text" class="minipopup__form-dop1--input" placeholder="Улица, дом, подъезд">
+         </div>
+         <div class="minipopup__form-dop2">
+            <p class="minipopup__form-dop2--title">
+               Номер рейса
+            </p>
+            <div class="tooltip">
+               <img class="tooltip2 minipopup__form-dop2-ico" src="images/popup/info.svg">
+               <div class="tooltiptext2">
+                  <p class="tooltiptext__title">
+                     Доставка в аэропорт
+                  </p>
+                  <p class="tooltiptext__flex2-text">
+                     Укажите номер рейса и мы привезём машину в аэропорт прямо к вашему прилёту
+                  </p>
+               </div>
+            </div>
+            <input type="text" class="minipopup__form-dop2--input" placeholder="UT 4212">
+         </div>
+         <button class="minipopup__btn">
+            Забронировать
+         </button>
+
+      </div>
+   </div>
+
+   <!-- Мини-попап - конец -->
+
+
+   <script src="js/nouislider.min.js" defer></script>
+   <script src="js/slider.min.js" defer></script>
+   <script src="js/app.js" defer></script>
+</body>
+
+</html>
